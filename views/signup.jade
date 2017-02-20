@@ -1,0 +1,43 @@
+doctype html
+html#basic-html
+  head
+    meta(charset='utf-8')
+
+
+   title Sign Up - InstagramHelper
+    meta(name='csrf-param', content='authenticity_token')
+    meta(name='csrf-token', content='658M3RHXQNiL6l6Xk1apLovS3yLcLpv75HyczWZrG06hW/IUlW2On7QhckoNyAgYipwiBQfwCMyd7vKIbk9gUg==')
+  body#basic.customdevise.registrations.new
+    // Google Tag Manager
+    noscript
+
+    .max-width-450.centered
+      .widget.no-margin-bottom
+        .whead.text-center.tall
+          a(href='/')
+            img(retina='true', data-at2x='//cdn.app.instagramhelper.herokuapp.com/assets/logo@2x-f156e7aa407cd2cdfdf7f874673aed0c6f976bd5289109904a49a557b784b721.png', src='//cdn.app.instagramhelper.herokuapp.com/assets/logo-0b4ae50a5f6e992f8ae7c63abc3207e6b1a096f4b2d4f4337d6a4aa42ea562bb.png', alt='Logo')
+        #create
+          form(role='form', action="/signup",method='post')
+            .wbody
+              .input-wrapper.email.required.registration_form_email
+                label.field-wrap
+                  .label
+                    abbr(title='required')
+                    |  UserName
+                  .field
+                input.form-control(type='text', name="username", placeholder='Enter Username')
+              .input-wrapper.password.optional.registration_form_password
+                label.field-wrap
+                  .label Password
+                  .field
+                    input.form-control(type='password', name="password", placeholder='Password')
+            .wfoot.clearfix
+              .form-notice
+                | By clicking, you agree to our
+                a(href='http://instagramhelper.herokuapp.com/privacy-policy/', target='_blank') Privacy Policy
+                |  and
+                a(href='http://instagramhelper.herokuapp.com/terms-of-service/', target='_blank') Terms of Service
+                | .
+              button.button.success.expanded Sign Up
+      .link-box.text-center
+        a(href='/signin') Already have an account?

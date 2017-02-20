@@ -1,0 +1,528 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        link(rel='dns-prefetch')
+        link(href='//ajax.googleapis.com/ajax/libs/', rel='dns-prefetch')
+        link(href='//cdnjs.cloudflare.com/ajax/libs/', rel='dns-prefetch')
+        link(href='https://js.stripe.com/v2/', rel='dns-prefetch')
+        link(href='//fonts.googleapis.com/', rel='dns-prefetch')
+        link(href='//www.googletagmanager.com', rel='dns-prefetch')
+        link(rel='preconnect')
+        link(href='//ajax.googleapis.com/ajax/libs/', rel='preconnect')
+        link(href='//cdnjs.cloudflare.com/ajax/libs/', rel='preconnect')
+        link(href='https://js.stripe.com/v2/', rel='preconnect')
+        link(href='//fonts.googleapis.com/', rel='preconnect')
+        link(href='//www.googletagmanager.com', rel='preconnect')
+        link(href='//fonts.googleapis.com/css?family=Open+Sans:400,700,600', rel='stylesheet', type='text/css')
+        link(rel='stylesheet', media='screen', href='//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/ui-lightness/jquery-ui.css', data-turbolinks-track='reload')
+        link(rel='stylesheet', media='screen', href='//cdn.app.boostgram.com/assets/application-77b8630ece0d0e5362e601934caf0d2e60cf8ce4d6960fbfeb9902f03f276572.css', data-turbolinks-track='reload')
+        script(data-apikey='b6304bad49227c82ad9eae885a4772b6', data-appversion='1.67.0', data-releasestage='production', src='//d2wy8f7a9ursnm.cloudfront.net/bugsnag-2.min.js')
+        script(src='https://js.stripe.com/v2/', data-turbolinks-track='reload')
+        script(src='//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js', data-turbolinks-track='reload')
+        script(src='//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js', data-turbolinks-track='reload')
+        script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js', data-turbolinks-track='reload')
+        script(src='//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js', data-turbolinks-track='reload')
+        script(src='//cdn.app.boostgram.com/assets/application-b4ea75d23f51be1232e92aadcf8ad1a3107237d29e6c9b09bd458f78730c731d.js', data-turbolinks-track='reload')
+        meta(name='action-cable-url', content='wss://app.boostgram.com/cable')
+        meta(content='user-scalable=no, initial-scale=1, maximum-scale=1,  minimum-scale=1, width=device-width, height=device-height', name='viewport')
+        meta(content='telephone=no', name='format-detection')
+        meta(content='no-preview', name='turbolinks-cache-control')
+        link(href='//cdn.app.boostgram.com/assets/icons/favicon-12f64b5c93f1c4078eb2e7ebee50e2663c0d0d3556a6f56b8587177dd8976fb4.ico', rel='shortcut icon', type='image/x-icon')
+        link(href='//cdn.app.boostgram.com/assets/icons/apple-touch-icon-74cee9c4fbb278201b46840cfb183a2f31ef30a1fe4417440dfbd25369213b3f.png', rel='apple-touch-icon')
+        link(href='//cdn.app.boostgram.com/assets/icons/apple-touch-icon-57x57-74cee9c4fbb278201b46840cfb183a2f31ef30a1fe4417440dfbd25369213b3f.png', rel='apple-touch-icon', sizes='57x57')
+        link(href='//cdn.app.boostgram.com/assets/icons/apple-touch-icon-72x72-ef6a5cd0d432d18216a709c6f7cdd227ada0f5b6b304dce62abdf4e191cdb968.png', rel='apple-touch-icon', sizes='72x72')
+        link(href='//cdn.app.boostgram.com/assets/icons/apple-touch-icon-76x76-b0337ec2a7554704c1473b42220a560b1c2eff409fd95359788ee37d3d10f9cb.png', rel='apple-touch-icon', sizes='76x76')
+        link(href='//cdn.app.boostgram.com/assets/icons/apple-touch-icon-114x114-ca804646a4eb6e650cbc2b2944e1b7d22089ac517d1185c5a7ec27bb758d40f2.png', rel='apple-touch-icon', sizes='114x114')
+        link(href='//cdn.app.boostgram.com/assets/icons/apple-touch-icon-120x120-3522c5a4bec62dd90d5ecf9106f19b5c7a562c6cde29d61903b0a70bdbe745e7.png', rel='apple-touch-icon', sizes='120x120')
+        link(href='//cdn.app.boostgram.com/assets/icons/apple-touch-icon-144x144-08780b2f26e146489f011d78dc23ea7cb77c0fe06d5194845ce834242c023f00.png', rel='apple-touch-icon', sizes='144x144')
+        link(href='//cdn.app.boostgram.com/assets/icons/apple-touch-icon-152x152-168ff4176fd48f77fe392f2050e14b92b8303825e1a41e0655705296b95307eb.png', rel='apple-touch-icon', sizes='152x152')
+        title Settings - 9jewels - Boostgram
+        meta(name='csrf-param', content='authenticity_token')
+        meta(name='csrf-token', content='RAq8RNso50OfV8s/8FbKLbYCVDhW7mc7GCB5vy00zGknSoiZFWX1nUWy3g46S4qFmPTQuq354FzyHh7HYBQ9EQ==')
+    body.instagram_accounts.edit(data-admin='false', data-current-account='58a4992995893829c59ae302', data-current-user='58a4992995893829c59ae303', data-current-user-email='medapati.soujanya1@gmail.com', data-current-user-name='', data-ig-accounts-count='1', data-influx-start='2017-02-15T12:17:36-06:00', data-instagram='58a49b4095893829c29ae30a', data-paying-customer='false', data-plan-amount='99.0', data-proxy-login='false')
+        // Google Tag Manager
+        noscript
+            iframe(src='//www.googletagmanager.com/ns.html?id=GTM-5F9X8K', height='0', width='0', style='display:none;visibility:hidden')
+        script(data-turbolinks-eval='false').
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start': new Date().getTime(), event: 'gtm.js'
+                });
+                var f = d.getElementsByTagName(s)[0],
+                        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src =
+                        '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-5F9X8K');
+        // End Google Tag Manager
+        .alert-box.warning.text-center
+            | Your demo expires in 3 days  —  
+            a(href='/account/billing') Click here to enter billing information
+        .top-bar-full
+            #menu-bar
+                nav.title-bar(data-hide-for='medium', data-responsive-toggle='top-bar-menu', data-turbolinks-permanent='')
+                    .title-bar-left
+                        a#logo(href='/')
+                            img(retina='true', data-at2x='//cdn.app.boostgram.com/assets/logo@2x-f156e7aa407cd2cdfdf7f874673aed0c6f976bd5289109904a49a557b784b721.png', src='//cdn.app.boostgram.com/assets/logo-0b4ae50a5f6e992f8ae7c63abc3207e6b1a096f4b2d4f4337d6a4aa42ea562bb.png', alt='Logo')
+                    .title-bar-right
+                        button.menu-icon(data-toggle='', type='button')
+                nav#top-bar-menu.top-bar(data-turbolinks-permanent='')
+                    .row
+                        .large-12.columns
+                            .top-bar-left.show-for-medium
+                                ul.menu.menu-items
+                                    li
+                                        a#logo(href='/')
+                                            img(retina='true', data-at2x='//cdn.app.boostgram.com/assets/logo@2x-f156e7aa407cd2cdfdf7f874673aed0c6f976bd5289109904a49a557b784b721.png', src='//cdn.app.boostgram.com/assets/logo-0b4ae50a5f6e992f8ae7c63abc3207e6b1a096f4b2d4f4337d6a4aa42ea562bb.png', alt='Logo')
+                            .top-bar-right
+                                ul.vertical.medium-horizontal.menu.menu-items(data-click-open='true', data-disable-hover='true', data-responsive-menu='accordion medium-dropdown')
+                                    li
+                                        a#menu-dashboard(href='/')
+                                            i.fa.fa-dashboard
+                                            | Dashboard
+                                    li
+                                        a(target='blank', href='http://help.boostgram.com')
+                                            i.fa.fa-question-circle
+                                            | Help
+                                    li
+                                        a
+                                            .user-menu
+                                                span#picture
+                                                    img(alt='medapati.soujanya1@gmail.com', src='https://secure.gravatar.com/avatar/023e004f2216ede0eb3b854acd0b5da2?default=identicon&secure=true', width='80', height='80')
+                                                span#name medapati.soujanya1@gmail.com
+                                        ul.menu.vertical
+                                            li
+                                                a(href='/user/edit')
+                                                    i.fa.fa-user
+                                                    span.translation_missing(title='translation missing: en.application.my_account') My Account
+                                            li
+                                                a(href='/account/billing')
+                                                    i.fa.fa-credit-card
+                                                    span.translation_missing(title='translation missing: en.application.billing') Billing
+                                            li
+                                                a(href='/referrals')
+                                                    i.fa.fa-bullhorn
+                                                    | Manage
+                                                    |                                         Referrals
+                                            li
+                                                a(data-turbolinks='false', href='/signout')
+                                                    i.fa.fa-sign-out
+                                                    | Sign Out
+            #breadcrumb-bar
+                .row
+                    .large-12.columns
+                        ul.breadcrumbs
+                            li
+                                a(href='/') Dashboard
+                            li
+                                a(href='/instagram_accounts/9jewels') 9jewels
+                            li.current Settings
+        #ig-menu.ig-header-bar(data-active-page='settings')
+            .row
+                .large-12.columns
+                    nav.title-bar(data-hide-for='medium', data-responsive-toggle='ig-account-menu', data-turbolinks-permanent='')
+                        .title-bar-left.ig-info
+                            a(target='blank', href='http://instagram.com/9jewels')
+                                img(src='https://scontent-ort2-1.cdninstagram.com/t51.2885-19/11850295_633028826834035_1163848953_a.jpg', alt='11850295 633028826834035 1163848953 a', width='75', height='75')
+                                .ig-username
+                                    span 9jewels
+                        .title-bar-right
+                            button.menu-icon(data-toggle='', type='button')
+                    nav#ig-account-menu.top-bar
+                        .top-bar-left.show-for-medium(data-turbolinks-permanent='')
+                            ul.menu.menu-items
+                                li.ig-info
+                                    a(target='blank', href='http://instagram.com/9jewels')
+                                        img(src='https://scontent-ort2-1.cdninstagram.com/t51.2885-19/11850295_633028826834035_1163848953_a.jpg', alt='11850295 633028826834035 1163848953 a', width='75', height='75')
+                                        .ig-username
+                                            span 9jewels
+                        .top-bar-right
+                            ul.vertical.medium-horizontal.menu.menu-items.ig-submenu(data-multi-open='false', data-responsive-menu='accordion medium-dropdown')
+                                li(data-turbolinks-permanent='')
+                                    a#ig-menu-analytics(href='/instagram_accounts/9jewels') Analytics
+                                    ul.menu
+                                        li
+                                            a(href='/instagram_accounts/9jewels/followers')
+                                                i.fa.fa-users
+                                                | Followers
+                                        li
+                                            a(href='/instagram_accounts/9jewels/engagement')
+                                                i.fa.fa-rocket
+                                                | Engagement
+                                li(data-turbolinks-permanent='')
+                                    a#ig-menu-actions(href='/instagram_accounts/9jewels/likes') Actions
+                                    ul.menu
+                                        li
+                                            a(href='/instagram_accounts/9jewels/likes')
+                                                i.fa.fa-heart
+                                                | Likes
+                                        li
+                                            a(href='/instagram_accounts/9jewels/follows')
+                                                i.fa.fa-user-plus
+                                                | Follows
+                                        li
+                                            a(href='/instagram_accounts/9jewels/unfollows')
+                                                i.fa.fa-user-times
+                                                | Unfollows
+                                li(data-turbolinks-permanent='')
+                                    a#ig-menu-posts(href='/instagram_accounts/9jewels/posts') Posts
+                                    ul.menu
+                                        li
+                                            a(href='/instagram_accounts/9jewels/posts')
+                                                i.fa.fa-calendar
+                                                span.translation_missing(title='translation missing: en.instagram_accounts.header_bar.scheduled_posts') Scheduled Posts
+                                        li
+                                            a(href='/instagram_accounts/9jewels/posts/posted')
+                                                i.fa.fa-check-circle-o
+                                                | Previously Posted
+                                li(data-turbolinks-permanent='')
+                                    a#ig-menu-settings(href='/instagram_accounts/9jewels/edit')
+                                        span.translation_missing(title='translation missing: en.application.settings') Settings
+        div(style='margin-top:20px;')
+        .row
+            .large-12.columns
+                #update
+                    .alert-box.success.margin-bottom.round(style='')
+                        .message
+                            | Your settings have been successfully updated and your account has been started!
+                    #instagram-values.row(data-excluded-tags='[]', data-excluded-users='[]', data-locations='[{"id":"212988663","name":"New York, New York","subtitle":"New York"},{"id":"20188833","name":"Manhattan, New York","subtitle":"Manhattan"},{"id":"212901056","name":"Las Vegas, Nevada","subtitle":"Las Vegas"},{"id":"212999109","name":"Los Angeles, California","subtitle":"Los Angeles"},{"id":"332100324","name":"Beverly Hills. L.A","subtitle":"Los Angeles"},{"id":"213425969","name":"Hollywood - Los Angeles, CA","subtitle":"Los Angeles"},{"id":"253341786","name":"San Franciso, California","subtitle":"San Francisco"},{"id":"212971112","name":"Orlando, Florida","subtitle":"Orlando"},{"id":"213480180","name":"Washington, District of Columbia","subtitle":"Washington, District of Columbia"},{"id":"212941492","name":"Miami, Florida","subtitle":"Miami"},{"id":"206698624","name":"Boston, Massachusetts","subtitle":"Boston"},{"id":"213941548","name":"Seattle, Washington","subtitle":"Seattle"},{"id":"212983635","name":"San Diego, California","subtitle":"San Diego"}]', data-tags='[{"name":"abeautifulmess"},{"name":"abmlittlethings"},{"name":"calledtobecreative"},{"name":"diydecor"},{"name":"dscolor"},{"name":"waketomake"},{"name":"wearethemakers"},{"name":"makersgonnamake"},{"name":"handsandhustle"},{"name":"abmcrafty"},{"name":"modernmaker"}]', data-userlist='[{"id":"13893199","username":"psimadethis","picture":"https://scontent.cdninstagram.com/t51.2885-19/s150x150/14279154_1106891696057323_29205433_a.jpg","follower_count":174889,"is_verified":true,"local_picture":"//cdn.app.boostgram.com/user_images/14279154_1106891696057323_29205433_a.jpg"},{"id":"12548586","username":"abeautifulmess","picture":"https://scontent.cdninstagram.com/t51.2885-19/10598506_492418010894204_1236404939_a.jpg","follower_count":523210,"is_verified":false,"local_picture":"//cdn.app.boostgram.com/user_images/10598506_492418010894204_1236404939_a.jpg"},{"id":"2998870","username":"apairandaspare","picture":"https://scontent.cdninstagram.com/t51.2885-19/s150x150/15043435_611616795697320_1448685837511294976_a.jpg","follower_count":163254,"is_verified":false,"local_picture":"//cdn.app.boostgram.com/user_images/15043435_611616795697320_1448685837511294976_a.jpg"},{"id":"5311597","username":"sugarandcloth","picture":"https://scontent.cdninstagram.com/t51.2885-19/s150x150/14374465_1582962742011009_4947845300434763776_a.jpg","follower_count":226186,"is_verified":false,"local_picture":"//cdn.app.boostgram.com/user_images/14374465_1582962742011009_4947845300434763776_a.jpg"},{"id":"5372144","username":"ispydiy","picture":"https://scontent.cdninstagram.com/t51.2885-19/s150x150/14350580_538742799645040_6584295009204305920_a.jpg","follower_count":77668,"is_verified":false,"local_picture":"//cdn.app.boostgram.com/user_images/14350580_538742799645040_6584295009204305920_a.jpg"},{"id":"430917502","username":"diy","picture":"https://scontent.cdninstagram.com/t51.2885-19/s150x150/12331813_1635490550047153_954098358_a.jpg","follower_count":572731,"is_verified":false,"local_picture":"//cdn.app.boostgram.com/user_images/12331813_1635490550047153_954098358_a.jpg"},{"id":"841040","username":"elsielarson","picture":"https://scontent.cdninstagram.com/t51.2885-19/s150x150/15875925_1401272703218531_393782977022132224_a.jpg","follower_count":289215,"is_verified":false,"local_picture":"//cdn.app.boostgram.com/user_images/15875925_1401272703218531_393782977022132224_a.jpg"},{"id":"6661199","username":"studiodiy","picture":"https://scontent.cdninstagram.com/t51.2885-19/s150x150/15623858_170438970100173_1046635353387040768_a.jpg","follower_count":336481,"is_verified":false,"local_picture":"//cdn.app.boostgram.com/user_images/15623858_170438970100173_1046635353387040768_a.jpg"},{"id":"5258402","username":"ohhappyday","picture":"https://scontent.cdninstagram.com/t51.2885-19/11849059_1456617504666324_2063951250_a.jpg","follower_count":345010,"is_verified":false,"local_picture":"//cdn.app.boostgram.com/user_images/11849059_1456617504666324_2063951250_a.jpg"},{"id":"21677473","username":"michaelsstores","picture":"https://scontent.cdninstagram.com/t51.2885-19/s150x150/14597278_197203377354006_7611472172170608640_a.jpg","follower_count":528714,"is_verified":true,"local_picture":"//cdn.app.boostgram.com/user_images/14597278_197203377354006_7611472172170608640_a.jpg"},{"id":"7640303","username":"ohjoy","picture":"https://scontent.cdninstagram.com/t51.2885-19/s150x150/12120256_507516152755211_1641077116_a.jpg","follower_count":344536,"is_verified":true,"local_picture":"//cdn.app.boostgram.com/user_images/12120256_507516152755211_1641077116_a.jpg"}]')
+                        .large-12.columns
+                            .widget
+                                form#edit_instagram_account_58a49b4095893829c29ae30a.simple_form.edit_instagram_account(novalidate='novalidate', name='update_instagram_account', action='/instagram_accounts/9jewels', accept-charset='UTF-8', data-remote='true', method='post')
+                                    input(type='hidden', name='_method', value='put')
+                                    .wbody.no-head
+                                        .row.large-input-label
+                                            .large-4.columns
+                                                .input-wrapper.boolean.optional.instagram_account_liking
+                                                    label.field-wrap
+                                                        .label LIKING
+                                                        .field
+                                                            input(name='instagram_account[liking]', type='hidden', value='0')
+                                                            input#instagram_account_liking.boolean.optional(type='checkbox', value='1', checked='checked', name='instagram_account[liking]')
+                                                            label.boolean.optional(for='instagram_account_liking') LIKING
+                                            .large-4.columns
+                                                .input-wrapper.boolean.optional.instagram_account_following
+                                                    label.field-wrap
+                                                        .label FOLLOWING
+                                                        .field
+                                                            input(name='instagram_account[following]', type='hidden', value='0')
+                                                            input#instagram_account_following.boolean.optional(type='checkbox', value='1', checked='checked', name='instagram_account[following]')
+                                                            label.boolean.optional(for='instagram_account_following') FOLLOWING
+                                            .large-4.columns
+                                                .input-wrapper.boolean.optional.instagram_account_unfollowing
+                                                    label.field-wrap
+                                                        .label UNFOLLOWING
+                                                        .field
+                                                            input(name='instagram_account[unfollowing]', type='hidden', value='0')
+                                                            input#instagram_account_unfollowing.boolean.optional(type='checkbox', value='1', checked='checked', name='instagram_account[unfollowing]')
+                                                            label.boolean.optional(for='instagram_account_unfollowing') UNFOLLOWING
+                                        .clear
+                                        .section-heading.small-margin-top Like Targeting
+                                        .row
+                                            .large-6.columns
+                                                .input-wrapper.select.required.instagram_account_like_settings_source
+                                                    label.field-wrap
+                                                        .label
+                                                            abbr(title='required')
+                                                            |                                                     Like Photos Using
+                                                            i.help-icon.fa.fa-question-circle(data-toggle='tooltip', data-placement='top', title='The media source used to find photos and videos to be liked.')
+                                                        .field
+                                                            select#instagram_account_like_settings_source.select.required(name='instagram_account[like_settings][source]')
+                                                                option(selected='selected', value='userlist')
+                                                                    | Followers
+                                                                option(value='tags') Tags
+                                                                option(value='locations') Locations
+                                        #tags-select.hidden
+                                            .input-wrapper.select.optional.instagram_account_tags
+                                                label.field-wrap
+                                                    .label
+                                                        | Target Media Tagged With
+                                                        i.help-icon.fa.fa-question-circle(data-toggle='tooltip', data-placement='top', title='Enter tags that media needs to be targeted.')
+                                                    .field
+                                                        input(name='instagram_account[tags][]', type='hidden', value='')
+                                                        select#instagram_account_tags.select.optional.tags-select.not-selecter(multiple='multiple', name='instagram_account[tags][]')
+                                                            option(selected='selected', value='{"name":"abeautifulmess"}')
+                                                                | abeautifulmess
+                                                            option(selected='selected', value='{"name":"abmlittlethings"}')
+                                                                | abmlittlethings
+                                                            option(selected='selected', value='{"name":"calledtobecreative"}')
+                                                                | calledtobecreative
+                                                            option(selected='selected', value='{"name":"diydecor"}')
+                                                                | diydecor
+                                                            option(selected='selected', value='{"name":"dscolor"}')
+                                                                | dscolor
+                                                            option(selected='selected', value='{"name":"waketomake"}')
+                                                                | waketomake
+                                                            option(selected='selected', value='{"name":"wearethemakers"}')
+                                                                | wearethemakers
+                                                            option(selected='selected', value='{"name":"makersgonnamake"}')
+                                                                | makersgonnamake
+                                                            option(selected='selected', value='{"name":"handsandhustle"}')
+                                                                | handsandhustle
+                                                            option(selected='selected', value='{"name":"abmcrafty"}')
+                                                                | abmcrafty
+                                                            option(selected='selected', value='{"name":"modernmaker"}')
+                                                                | modernmaker
+                                        #locations-select.hidden
+                                            .input-wrapper.select.optional.instagram_account_locations
+                                                label.field-wrap
+                                                    .label Locations
+                                                    .field
+                                                        input(name='instagram_account[locations][]', type='hidden', value='')
+                                                        select#instagram_account_locations.select.optional.locations-select.not-selecter(multiple='multiple', name='instagram_account[locations][]')
+                                                            option(selected='selected', value='{"id":"212988663","name":"New York, New York","subtitle":"New York"}')
+                                                            option(selected='selected', value='{"id":"20188833","name":"Manhattan, New York","subtitle":"Manhattan"}')
+                                                            option(selected='selected', value='{"id":"212901056","name":"Las Vegas, Nevada","subtitle":"Las Vegas"}')
+                                                            option(selected='selected', value='{"id":"212999109","name":"Los Angeles, California","subtitle":"Los Angeles"}')
+                                                            option(selected='selected', value='{"id":"332100324","name":"Beverly Hills. L.A","subtitle":"Los Angeles"}')
+                                                            option(selected='selected', value='{"id":"213425969","name":"Hollywood - Los Angeles, CA","subtitle":"Los Angeles"}')
+                                                            option(selected='selected', value='{"id":"253341786","name":"San Franciso, California","subtitle":"San Francisco"}')
+                                                            option(selected='selected', value='{"id":"212971112","name":"Orlando, Florida","subtitle":"Orlando"}')
+                                                            option(selected='selected', value='{"id":"213480180","name":"Washington, District of Columbia","subtitle":"Washington, District of Columbia"}')
+                                                            option(selected='selected', value='{"id":"212941492","name":"Miami, Florida","subtitle":"Miami"}')
+                                                            option(selected='selected', value='{"id":"206698624","name":"Boston, Massachusetts","subtitle":"Boston"}')
+                                                            option(selected='selected', value='{"id":"213941548","name":"Seattle, Washington","subtitle":"Seattle"}')
+                                                            option(selected='selected', value='{"id":"212983635","name":"San Diego, California","subtitle":"San Diego"}')
+                                        .section-heading Follow Targeting
+                                        .input-wrapper.select.optional.instagram_account_userlist
+                                            label.field-wrap
+                                                .label
+                                                    | Target Followers Of
+                                                    i.help-icon.fa.fa-question-circle(data-toggle='tooltip', data-placement='top', title="Enter users you'd like to target the followers of.")
+                                                .field
+                                                    input(name='instagram_account[userlist][]', type='hidden', value='')
+                                                    select#instagram_account_userlist.select.optional.userlist-select.not-selecter(multiple='multiple', name='instagram_account[userlist][]')
+                                                        option(selected='selected', value='{"id":"13893199","username":"psimadethis","picture":"https://scontent.cdninstagram.com/t51.2885-19/s150x150/14279154_1106891696057323_29205433_a.jpg","follower_count":174889,"is_verified":true,"local_picture":"//cdn.app.boostgram.com/user_images/14279154_1106891696057323_29205433_a.jpg"}')
+                                                        option(selected='selected', value='{"id":"12548586","username":"abeautifulmess","picture":"https://scontent.cdninstagram.com/t51.2885-19/10598506_492418010894204_1236404939_a.jpg","follower_count":523210,"is_verified":false,"local_picture":"//cdn.app.boostgram.com/user_images/10598506_492418010894204_1236404939_a.jpg"}')
+                                                        option(selected='selected', value='{"id":"2998870","username":"apairandaspare","picture":"https://scontent.cdninstagram.com/t51.2885-19/s150x150/15043435_611616795697320_1448685837511294976_a.jpg","follower_count":163254,"is_verified":false,"local_picture":"//cdn.app.boostgram.com/user_images/15043435_611616795697320_1448685837511294976_a.jpg"}')
+                                                        option(selected='selected', value='{"id":"5311597","username":"sugarandcloth","picture":"https://scontent.cdninstagram.com/t51.2885-19/s150x150/14374465_1582962742011009_4947845300434763776_a.jpg","follower_count":226186,"is_verified":false,"local_picture":"//cdn.app.boostgram.com/user_images/14374465_1582962742011009_4947845300434763776_a.jpg"}')
+                                                        option(selected='selected', value='{"id":"5372144","username":"ispydiy","picture":"https://scontent.cdninstagram.com/t51.2885-19/s150x150/14350580_538742799645040_6584295009204305920_a.jpg","follower_count":77668,"is_verified":false,"local_picture":"//cdn.app.boostgram.com/user_images/14350580_538742799645040_6584295009204305920_a.jpg"}')
+                                                        option(selected='selected', value='{"id":"430917502","username":"diy","picture":"https://scontent.cdninstagram.com/t51.2885-19/s150x150/12331813_1635490550047153_954098358_a.jpg","follower_count":572731,"is_verified":false,"local_picture":"//cdn.app.boostgram.com/user_images/12331813_1635490550047153_954098358_a.jpg"}')
+                                                        option(selected='selected', value='{"id":"841040","username":"elsielarson","picture":"https://scontent.cdninstagram.com/t51.2885-19/s150x150/15875925_1401272703218531_393782977022132224_a.jpg","follower_count":289215,"is_verified":false,"local_picture":"//cdn.app.boostgram.com/user_images/15875925_1401272703218531_393782977022132224_a.jpg"}')
+                                                        option(selected='selected', value='{"id":"6661199","username":"studiodiy","picture":"https://scontent.cdninstagram.com/t51.2885-19/s150x150/15623858_170438970100173_1046635353387040768_a.jpg","follower_count":336481,"is_verified":false,"local_picture":"//cdn.app.boostgram.com/user_images/15623858_170438970100173_1046635353387040768_a.jpg"}')
+                                                        option(selected='selected', value='{"id":"5258402","username":"ohhappyday","picture":"https://scontent.cdninstagram.com/t51.2885-19/11849059_1456617504666324_2063951250_a.jpg","follower_count":345010,"is_verified":false,"local_picture":"//cdn.app.boostgram.com/user_images/11849059_1456617504666324_2063951250_a.jpg"}')
+                                                        option(selected='selected', value='{"id":"21677473","username":"michaelsstores","picture":"https://scontent.cdninstagram.com/t51.2885-19/s150x150/14597278_197203377354006_7611472172170608640_a.jpg","follower_count":528714,"is_verified":true,"local_picture":"//cdn.app.boostgram.com/user_images/14597278_197203377354006_7611472172170608640_a.jpg"}')
+                                                        option(selected='selected', value='{"id":"7640303","username":"ohjoy","picture":"https://scontent.cdninstagram.com/t51.2885-19/s150x150/12120256_507516152755211_1641077116_a.jpg","follower_count":344536,"is_verified":true,"local_picture":"//cdn.app.boostgram.com/user_images/12120256_507516152755211_1641077116_a.jpg"}')
+                                        .section-heading Unfollow Targeting
+                                        .row
+                                            .large-6.columns
+                                                .input-wrapper.select.required.instagram_account_unfollow_settings_source
+                                                    label.field-wrap
+                                                        .label
+                                                            abbr(title='required')
+                                                            |                                                     Unfollow From
+                                                            i.help-icon.fa.fa-question-circle(data-toggle='tooltip', data-placement='top', title='<strong>Boostgram:</strong> Only unfollow users that<br /> have been followed by Boostgram<br /> <strong>All:</strong> Unfollow any user from your account\
+                                                                                                                                  ')
+                                                        .field
+                                                            select#instagram_account_unfollow_settings_source.select.required(name='instagram_account[unfollow_settings][source]')
+                                                                option(value='all') All
+                                                                option(selected='selected', value='boostgram')
+                                                                    | Boostgram
+                                            .large-6.columns
+                                                #unfollow-delay
+                                                    .input-wrapper.select.required.instagram_account_unfollow_settings_delay
+                                                        label.field-wrap
+                                                            .label
+                                                                abbr(title='required')
+                                                                |  Time Until
+                                                                |                                                         Unfollow
+                                                                i.help-icon.fa.fa-question-circle(data-toggle='tooltip', data-placement='top', title='Boostgram will wait this much time before it unfollows a user it has followed.\
+                                                                                                                                    ')
+                                                            .field
+                                                                select#instagram_account_unfollow_settings_delay.select.required(name='instagram_account[unfollow_settings][delay]')
+                                                                    option(value='3600') 1 Hour
+                                                                    option(selected='selected', value='86400')
+                                                                        | 1
+                                                                        | Day
+                                                                    option(value='172800') 2 Days
+                                                                    option(value='259200') 3 Days
+                                                                    option(value='604800') 1 Week
+                                        .section-heading Email Reports
+                                        .row
+                                            .large-6.columns
+                                                .input-wrapper.select.optional.instagram_account_email_report
+                                                    label.field-wrap
+                                                        .label
+                                                            | Send Email Reports
+                                                            i.help-icon.fa.fa-question-circle(data-toggle='tooltip', data-placement='top', title='How often we will send you email reports for this Instagram account.\
+                                                                                                                                  ')
+                                                        .field
+                                                            select#instagram_account_email_report.select.optional(name='instagram_account[email_report]')
+                                                                option(value='off') Off
+                                                                option(value='weekly') Weekly
+                                                                option(selected='selected', value='monthly')
+                                                                    | Monthly
+                                        #advanced-settings.hidden
+                                            .section-heading Advanced Settings
+                                            .row
+                                                .large-6.columns
+                                                    .input-wrapper.select.optional.instagram_account_rate
+                                                        label.field-wrap
+                                                            .label
+                                                                | Activity Speed
+                                                                i.help-icon.fa.fa-question-circle(data-toggle='tooltip', data-placement='top', title='<strong>Slow:</strong> 950 Likes | 350 Follows / Unfollows<br /> <strong>Medium:</strong> 1200 Likes | 500 Follows / Unfollows<br /> <strong>Fast:</strong> 1800 Likes | 600 Follows / Unfollows<br /> Counts are per day\
+                                                                                                                                    ')
+                                                            .field
+                                                                select#instagram_account_rate.select.optional(name='instagram_account[rate]')
+                                                                    option(selected='selected', value='slow')
+                                                                        | Slow
+                                                                    option(value='medium') Medium
+                                                                    option(value='fast') Fast
+                                                .large-6.columns
+                                                    .input-wrapper.select.optional.instagram_account_gender_target
+                                                        label.field-wrap
+                                                            .label
+                                                                | Gender Targeting
+                                                                i.help-icon.fa.fa-question-circle(data-toggle='tooltip', data-placement='top', title='The gender that the system will<br /> target for liking and following.\
+                                                                                                                                    ')
+                                                            .field
+                                                                select#instagram_account_gender_target.select.optional(name='instagram_account[gender_target]')
+                                                                    option(selected='selected', value='all')
+                                                                        | All
+                                                                    option(value='male') Male
+                                                                    option(value='female') Female
+                                            .row
+                                                .large-6.columns
+                                                    .input-wrapper.string.required.instagram_account_like_settings_min_likes
+                                                        label.field-wrap
+                                                            .label
+                                                                abbr(title='required')
+                                                                |  Min-Likes
+                                                                i.help-icon.fa.fa-question-circle(data-toggle='tooltip', data-placement='top', title='Minimum number of likes that<br />media must have to be liked.<br /> <strong>Min:</strong> 0 | <strong>Max:</strong> 100\
+                                                                                                                                    ')
+                                                            .field
+                                                                input#instagram_account_like_settings_min_likes.string.required.numeric-stepper(value='5', required='required', aria-required='true', type='text', name='instagram_account[like_settings][min_likes]')
+                                                .large-6.columns
+                                                    .input-wrapper.string.required.instagram_account_like_settings_max_likes
+                                                        label.field-wrap
+                                                            .label
+                                                                abbr(title='required')
+                                                                |  Max-Likes
+                                                                i.help-icon.fa.fa-question-circle(data-toggle='tooltip', data-placement='top', title='Maximum number of likes that<br />media can have to be liked.<br /> <strong>Min:</strong> 25 | <strong>Unlimited:</strong> -1\
+                                                                                                                                    ')
+                                                            .field
+                                                                input#instagram_account_like_settings_max_likes.string.required.numeric-stepper(value='99', required='required', aria-required='true', type='text', name='instagram_account[like_settings][max_likes]')
+                                            .row
+                                                .large-6.columns
+                                                    .input-wrapper.boolean.optional.instagram_account_restrictions_enabled
+                                                        label.field-wrap
+                                                            .label
+                                                                | Automatic Throttling
+                                                                i.help-icon.fa.fa-question-circle(data-toggle='tooltip', data-placement='top', title="The system will automatically slow down your account when Instagram reports it's going too fast. We strongly recommended keeping this enabled.\
+                                                                                                                                    ")
+                                                            .field
+                                                                input(name='instagram_account[restrictions_enabled]', type='hidden', value='0')
+                                                                input#instagram_account_restrictions_enabled.boolean.optional(type='checkbox', value='1', checked='checked', name='instagram_account[restrictions_enabled]')
+                                                                label.boolean.optional(for='instagram_account_restrictions_enabled')
+                                                                    | Automatic
+                                                                    | Throttling
+                                            .section-heading Blacklist Targeting
+                                            .input-wrapper.select.required.instagram_account_exclusion_settings_users
+                                                label.field-wrap
+                                                    .label
+                                                        abbr(title='required')
+                                                        |  Users
+                                                        |                                                 to Blacklist
+                                                        i.help-icon.fa.fa-question-circle(data-toggle='tooltip', data-placement='top', title="Enter users you'd like to avoid liking, following, or unfollowing media from.\
+                                                                                                                                ")
+                                                    .field
+                                                        input(name='instagram_account[exclusion_settings][users][]', type='hidden', value='')
+                                                        select#instagram_account_exclusion_settings_users.select.required.exclusion-settings-users-select.not-selecter(multiple='multiple', required='required', aria-required='start typing usernames...', name='instagram_account[exclusion_settings][users][]')
+                                                            option(value='') start typing usernames...
+                                            .input-wrapper.select.required.instagram_account_exclusion_settings_tags
+                                                label.field-wrap
+                                                    .label
+                                                        abbr(title='required')
+                                                        |  Tags
+                                                        |                                                 to Blacklist
+                                                        i.help-icon.fa.fa-question-circle(data-toggle='tooltip', data-placement='top', title='Enter tags that should be avoided if media includes.')
+                                                    .field
+                                                        input(name='instagram_account[exclusion_settings][tags][]', type='hidden', value='')
+                                                        select#instagram_account_exclusion_settings_tags.select.required.exclusion-settings-tags-select.not-selecter(multiple='multiple', required='required', aria-required='start typing tags...', name='instagram_account[exclusion_settings][tags][]')
+                                                            option(value='') start typing tags...
+                                            .row
+                                                .large-4.columns
+                                                    .input-wrapper.string.required.instagram_account_exclusion_settings_followers
+                                                        label.field-wrap
+                                                            .label
+                                                                abbr(title='required')
+                                                                |  Minimum
+                                                                |                                                         Followers
+                                                                i.help-icon.fa.fa-question-circle(data-toggle='tooltip', data-placement='top', title='The minimum number of followers an account must have before being selected for interaction. (Default:&nbsp;100)\
+                                                                                                                                    ')
+                                                            .field
+                                                                input#instagram_account_exclusion_settings_followers.string.required.numeric-stepper(value='25', required='required', aria-required='true', type='text', name='instagram_account[exclusion_settings][followers]')
+                                                .large-4.columns
+                                                    .input-wrapper.string.required.instagram_account_exclusion_settings_following
+                                                        label.field-wrap
+                                                            .label
+                                                                abbr(title='required')
+                                                                |  Minimum
+                                                                |                                                         Following
+                                                                i.help-icon.fa.fa-question-circle(data-toggle='tooltip', data-placement='top', title='The minimum number of users an account must be following before being selected for interaction. (Default:&nbsp;10)\
+                                                                                                                                    ')
+                                                            .field
+                                                                input#instagram_account_exclusion_settings_following.string.required.numeric-stepper(value='10', required='required', aria-required='true', type='text', name='instagram_account[exclusion_settings][following]')
+                                                .large-4.columns
+                                                    .input-wrapper.string.required.instagram_account_exclusion_settings_posts
+                                                        label.field-wrap
+                                                            .label
+                                                                abbr(title='required')
+                                                                |  Minimum Posts
+                                                                i.help-icon.fa.fa-question-circle(data-toggle='tooltip', data-placement='top', title='The minimum number of posts an account must have before being selected for interaction. (Default:&nbsp;15)\
+                                                                                                                                    ')
+                                                            .field
+                                                                input#instagram_account_exclusion_settings_posts.string.required.numeric-stepper(value='10', required='required', aria-required='true', type='text', name='instagram_account[exclusion_settings][posts]')
+                                            .row
+                                                .large-6.columns
+                                                    .input-wrapper.boolean.required.instagram_account_explicit_content
+                                                        label.field-wrap
+                                                            .label
+                                                                abbr(title='required')
+                                                                |  Filter Explicit
+                                                                |                                                         Content
+                                                                i.help-icon.fa.fa-question-circle(data-toggle='tooltip', data-placement='top', title='Enable to avoid interacting with<br />users and media that is NSFW.\
+                                                                                                                                    ')
+                                                            .field
+                                                                input(name='instagram_account[explicit_content]', type='hidden', value='0')
+                                                                input#instagram_account_explicit_content.boolean.required(required='required', aria-required='true', type='checkbox', value='1', checked='checked', name='instagram_account[explicit_content]')
+                                                                label.boolean.required(for='instagram_account_explicit_content')
+                                                                    abbr(title='required')
+                                                                    |  Filter Explicit
+                                                                    |                                                         Content
+                                                .large-6.columns
+                                                    .input-wrapper.boolean.optional.instagram_account_filter_private_accounts
+                                                        label.field-wrap
+                                                            .label
+                                                                | Filter Private Accounts
+                                                                i.help-icon.fa.fa-question-circle(data-toggle='tooltip', data-placement='top', title='Enable to avoid sending follow<br /> requests to private users.\
+                                                                                                                                    ')
+                                                            .field
+                                                                input(name='instagram_account[filter_private_accounts]', type='hidden', value='0')
+                                                                input#instagram_account_filter_private_accounts.boolean.optional(type='checkbox', value='1', name='instagram_account[filter_private_accounts]')
+                                                                label.boolean.optional(for='instagram_account_filter_private_accounts')
+                                                                    | Filter
+                                                                    | Private Accounts
+                                        div(style='margin-top:40px;')
+                                        .row
+                                            .large-12.columns.text-center
+                                                .button.small.secondary.no-margin-bottom.never-load(data-behaviour='toggle-advanced-settings', data-original-text='Show Advanced Settings')
+                                                    | Show
+                                                    | Advanced Settings
+                                                div(style='margin-top:20px;')
+                                    .wfoot.clearfix
+                                        .float-left
+                                            a(data-confirm='{"title":"Remove Account","body":"Are you sure you want to remove this instagram account? This will cancel your subscription immediately if you have one!\n","ok":"Remove Account","cancel":"Cancel","okClass":"red","cancelClass":null,"cancelUrl":null,"password":"9jewels"}', rel='nofollow', data-method='delete', href='/instagram_accounts/9jewels')
+                                                .show-for-medium
+                                                    .button.red.never-load Remove Account
+                                                .hide-for-medium
+                                                    .button.red.never-load
+                                                        i.fa.fa-trash.no-left-align
+                                        .float-right
+                                            button.button.green(name='save', onclick='App.savingChanges()', value='true')
+                                                | Save
+                                        .clear
+                                                                                                    
