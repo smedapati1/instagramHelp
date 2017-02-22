@@ -9,6 +9,7 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
  var instagramApi = require('instagram-node').instagram();
  var Bluebird      = require('bluebird');
+ var Client = require('instagram-private-api').V1;
  //var config        = require('./config');
  // Every call to `ig.use()` overrides the `client_id/client_secret`
  // or `access_token` previously entered if they exist.

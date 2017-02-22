@@ -1,10 +1,208 @@
-//   Created by smedapati on 2/16/2017.
+doctype html
 html
-head
-
-
-body
-h1 The data is as follows
-p
-|#{data.username}
-
+    head
+        meta(charset='utf-8')
+        link(rel='dns-prefetch')
+        link(href='//ajax.googleapis.com/ajax/libs/', rel='dns-prefetch')
+        link(href='//cdnjs.cloudflare.com/ajax/libs/', rel='dns-prefetch')
+        link(href='https://js.stripe.com/v2/', rel='dns-prefetch')
+        link(href='//fonts.googleapis.com/', rel='dns-prefetch')
+        link(href='//www.googletagmanager.com', rel='dns-prefetch')
+        link(rel='preconnect')
+        link(href='//ajax.googleapis.com/ajax/libs/', rel='preconnect')
+        link(href='//cdnjs.cloudflare.com/ajax/libs/', rel='preconnect')
+        link(href='https://js.stripe.com/v2/', rel='preconnect')
+        link(href='//fonts.googleapis.com/', rel='preconnect')
+        link(href='//www.googletagmanager.com', rel='preconnect')
+        link(href='//fonts.googleapis.com/css?family=Open+Sans:400,700,600', rel='stylesheet', type='text/css')
+        link(rel='stylesheet', media='screen', href='//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/ui-lightness/jquery-ui.css', data-turbolinks-track='reload')
+        link(rel='stylesheet', media='screen', href='//cdn.app.boostgram.com/assets/application-77b8630ece0d0e5362e601934caf0d2e60cf8ce4d6960fbfeb9902f03f276572.css', data-turbolinks-track='reload')
+        script(data-apikey='b6304bad49227c82ad9eae885a4772b6', data-appversion='1.68.0', data-releasestage='production', src='//d2wy8f7a9ursnm.cloudfront.net/bugsnag-2.min.js')
+        script(src='https://js.stripe.com/v2/', data-turbolinks-track='reload')
+        script(src='//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js', data-turbolinks-track='reload')
+        script(src='//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js', data-turbolinks-track='reload')
+        script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js', data-turbolinks-track='reload')
+        script(src='//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js', data-turbolinks-track='reload')
+        script(src='//cdn.app.boostgram.com/assets/application-2f7ef6a540a54544f1d533d0620967ac0ef3d6d1c2157efb127fde463b2d48cd.js', data-turbolinks-track='reload')
+        meta(name='action-cable-url', content='wss://app.boostgram.com/cable')
+        meta(content='user-scalable=no, initial-scale=1, maximum-scale=1,  minimum-scale=1, width=device-width, height=device-height', name='viewport')
+        meta(content='telephone=no', name='format-detection')
+        meta(content='no-preview', name='turbolinks-cache-control')
+        link(href='//cdn.app.boostgram.com/assets/icons/favicon-12f64b5c93f1c4078eb2e7ebee50e2663c0d0d3556a6f56b8587177dd8976fb4.ico', rel='shortcut icon', type='image/x-icon')
+        link(href='//cdn.app.boostgram.com/assets/icons/apple-touch-icon-74cee9c4fbb278201b46840cfb183a2f31ef30a1fe4417440dfbd25369213b3f.png', rel='apple-touch-icon')
+        link(href='//cdn.app.boostgram.com/assets/icons/apple-touch-icon-57x57-74cee9c4fbb278201b46840cfb183a2f31ef30a1fe4417440dfbd25369213b3f.png', rel='apple-touch-icon', sizes='57x57')
+        link(href='//cdn.app.boostgram.com/assets/icons/apple-touch-icon-72x72-ef6a5cd0d432d18216a709c6f7cdd227ada0f5b6b304dce62abdf4e191cdb968.png', rel='apple-touch-icon', sizes='72x72')
+        link(href='//cdn.app.boostgram.com/assets/icons/apple-touch-icon-76x76-b0337ec2a7554704c1473b42220a560b1c2eff409fd95359788ee37d3d10f9cb.png', rel='apple-touch-icon', sizes='76x76')
+        link(href='//cdn.app.boostgram.com/assets/icons/apple-touch-icon-114x114-ca804646a4eb6e650cbc2b2944e1b7d22089ac517d1185c5a7ec27bb758d40f2.png', rel='apple-touch-icon', sizes='114x114')
+        link(href='//cdn.app.boostgram.com/assets/icons/apple-touch-icon-120x120-3522c5a4bec62dd90d5ecf9106f19b5c7a562c6cde29d61903b0a70bdbe745e7.png', rel='apple-touch-icon', sizes='120x120')
+        link(href='//cdn.app.boostgram.com/assets/icons/apple-touch-icon-144x144-08780b2f26e146489f011d78dc23ea7cb77c0fe06d5194845ce834242c023f00.png', rel='apple-touch-icon', sizes='144x144')
+        link(href='//cdn.app.boostgram.com/assets/icons/apple-touch-icon-152x152-168ff4176fd48f77fe392f2050e14b92b8303825e1a41e0655705296b95307eb.png', rel='apple-touch-icon', sizes='152x152')
+        title insta
+            body.instagram_accounts.followers(data-admin='false', data-current-account='58a4992995893829c59ae302', data-current-user='58a4992995893829c59ae303', data-current-user-email='medapati.soujanya1@gmail.com', data-current-user-name='', data-ig-accounts-count='1', data-influx-start='2017-02-15T12:17:36-06:00', data-instagram='58a49b4095893829c29ae30a', data-paying-customer='false', data-plan-amount='99.0', data-proxy-login='false')
+        // Google Tag Manager
+        #menu-bar
+            nav.title-bar(data-hide-for='medium', data-responsive-toggle='top-bar-menu', data-turbolinks-permanent='')
+              .title-bar-left
+                a#logo(href='/')
+                  img(retina='true', data-at2x='//cdn.app.boostgram.com/assets/logo@2x-f156e7aa407cd2cdfdf7f874673aed0c6f976bd5289109904a49a557b784b721.png', src='//cdn.app.boostgram.com/assets/logo-0b4ae50a5f6e992f8ae7c63abc3207e6b1a096f4b2d4f4337d6a4aa42ea562bb.png', alt='Logo')
+              .title-bar-right
+                button.menu-icon(data-toggle='', type='button')
+            nav#top-bar-menu.top-bar(data-turbolinks-permanent='')
+              .row
+                .large-12.columns
+                  .top-bar-left.show-for-medium
+                    ul.menu.menu-items
+                      li
+                        a#logo(href='/')
+                          img(retina='true', data-at2x='//cdn.app.boostgram.com/assets/logo@2x-f156e7aa407cd2cdfdf7f874673aed0c6f976bd5289109904a49a557b784b721.png', src='//cdn.app.boostgram.com/assets/logo-0b4ae50a5f6e992f8ae7c63abc3207e6b1a096f4b2d4f4337d6a4aa42ea562bb.png', alt='Logo')
+                  .top-bar-right
+                    ul.vertical.medium-horizontal.menu.menu-items(data-click-open='true', data-disable-hover='true', data-responsive-menu='accordion medium-dropdown')
+                      li
+                        a#menu-dashboard(href='/')
+                          i.fa.fa-dashboard
+                          | Dashboard
+                      li
+                        a(target='blank', href='http://help.boostgram.com')
+                          i.fa.fa-question-circle
+                          | Help
+                      li
+                        a
+                          .user-menu
+                            span#picture
+                              img(alt='medapati.soujanya1@gmail.com', src='https://secure.gravatar.com/avatar/023e004f2216ede0eb3b854acd0b5da2?default=identicon&secure=true', width='80', height='80')
+                            span#name medapati.soujanya1@gmail.com
+                        ul.menu.vertical
+                          li
+                            a(href='/user/edit')
+                              i.fa.fa-user
+                              span.translation_missing(title='translation missing: en.application.my_account') My Account
+                          li
+                            a(href='/account/billing')
+                              i.fa.fa-credit-card
+                              span.translation_missing(title='translation missing: en.application.billing') Billing
+                          li
+                            a(href='/referrals')
+                              i.fa.fa-bullhorn
+                              | Manage Referrals
+                          li
+                            a(data-turbolinks='false', href='/signout')
+                              i.fa.fa-sign-out
+                              | Sign Out
+          #breadcrumb-bar
+            .row
+              .large-12.columns
+                ul.breadcrumbs
+                  li
+                    a(href='/') Dashboard
+                  li.current #{data.username}
+        #ig-menu.ig-header-bar(data-active-page='analytics')
+            .row
+                .large-12.columns
+                    nav.title-bar(data-hide-for='medium', data-responsive-toggle='ig-account-menu', data-turbolinks-permanent='')
+                        .title-bar-left.ig-info
+                            a(target='blank', href='http://instagram.com/#{data.username}')
+                                img(src='//cdn.app.boostgram.com/user_images/11850295_633028826834035_1163848953_a.jpg', alt='11850295 633028826834035 1163848953 a', width='75', height='75')
+                                .ig-username
+                                    span #{data.username}
+                        .title-bar-right
+                            button.menu-icon(data-toggle='', type='button')
+                    nav#ig-account-menu.top-bar
+                        .top-bar-left.show-for-medium(data-turbolinks-permanent='')
+                            ul.menu.menu-items
+                                li.ig-info
+                                    a(target='blank', href='http://instagram.com/#{data.username}')
+                                        img(src='//cdn.app.boostgram.com/user_images/11850295_633028826834035_1163848953_a.jpg', alt='11850295 633028826834035 1163848953 a', width='75', height='75')
+                                        .ig-username
+                                            span #{data.username}
+                        .top-bar-right
+                            ul.vertical.medium-horizontal.menu.menu-items.ig-submenu(data-multi-open='false', data-responsive-menu='accordion medium-dropdown')
+                                li(data-turbolinks-permanent='')
+                                    a#ig-menu-analytics(href='/instagram_accounts/#{data.username}') Analytics
+                                    ul.menu
+                                        li
+                                            a(href='/instagram_accounts/#{data.username}/followers')
+                                                i.fa.fa-users
+                                                | Followers
+                                        li
+                                            a(href='/instagram_accounts/#{data.username}/engagement')
+                                                i.fa.fa-rocket
+                                                | Engagement
+                                li(data-turbolinks-permanent='')
+                                    a#ig-menu-actions(href='/instagram_accounts/#{data.username}/likes') Actions
+                                    ul.menu
+                                        li
+                                            a(href='/instagram_accounts/#{data.username}/likes')
+                                                i.fa.fa-heart
+                                                | Likes
+                                        li
+                                            a(href='/instagram_accounts/#{data.username}/follows')
+                                                i.fa.fa-user-plus
+                                                | Follows
+                                        li
+                                            a(href='/instagram_accounts/#{data.username}/unfollows')
+                                                i.fa.fa-user-times
+                                                | Unfollows
+                                li(data-turbolinks-permanent='')
+                                    a#ig-menu-posts(href='/instagram_accounts/#{data.username}/posts') Posts
+                                    ul.menu
+                                        li
+                                            a(href='/instagram_accounts/#{data.username}/posts')
+                                                i.fa.fa-calendar
+                                                span.translation_missing(title='translation missing: en.instagram_accounts.header_bar.scheduled_posts') Scheduled Posts
+                                        li
+                                            a(href='/instagram_accounts/#{data.username}/posts/posted')
+                                                i.fa.fa-check-circle-o
+                                                | Previously Posted
+                                li(data-turbolinks-permanent='')
+                                    a#ig-menu-settings(href='/instagram_accounts/#{data.username}/edit')
+                                        span.translation_missing(title='translation missing: en.application.settings') Settings
+                                li.button-style
+                                    a(href='/account/billing')
+                                        .button.small.green Start Billing
+        div(style='margin-top:20px;')
+        .row
+            .large-12.columns
+        .row
+            .large-6.medium-6.columns
+                h3.chart-heading
+                    | Followers
+                    span.help-info(data-content='This chart shows your number of followers over time.\
+          ', data-toggle='popover')
+                        i.fa.fa-question-circle
+            .large-6.medium-6.columns.right
+                .daterange.daterange--double
+        .row
+            div(style='margin-top:20px;')
+            .large-12.columns
+                .chart-box
+                    .no-data.hidden
+                        .no-data-message
+                            h3 No Statistics Available
+                            p If you've just signed up, please check back in about an hour.
+                    #followers-chart.chart.trend
+                div(style='margin-top:20px;')
+                .row
+                    .large-3.medium-6.columns
+                        .stat-box.text-center
+                            #stat1.stat.xbig-text(data-toggle='tooltip')
+                                span
+                                    i.fa.fa-spinner.fa-spin
+                            .title Current
+                    .large-3.medium-6.columns
+                        .stat-box.text-center
+                            #stat2.stat.xbig-text(data-toggle='tooltip')
+                                span
+                                    i.fa.fa-spinner.fa-spin
+                            .title 1 Week Ago
+                    .large-3.medium-6.columns
+                        .stat-box.text-center
+                            #stat3.stat.xbig-text(data-toggle='tooltip')
+                                span
+                                    i.fa.fa-spinner.fa-spin
+                            .title 1 Month Ago
+                    .large-3.medium-6.columns
+                        .stat-box.text-center
+                            #stat4.stat.xbig-text(data-toggle='tooltip')
+                                span
+                                    i.fa.fa-spinner.fa-spin
+                            .title 3 Months Ago

@@ -6,7 +6,7 @@ var cookieParser  = require('cookie-parser');
 var instagramApi  = require('instagram-node').instagram();
 var config        = require('./config');
 var Bluebird      = require('bluebird');
-
+var Client = require('instagram-private-api').V1;
 Bluebird.promisifyAll(instagramApi);
 
 router.get('/', function (req, res) {
@@ -39,7 +39,7 @@ router.get('/login', function(req, res) {
 
 
 router.post('/login', passport.authenticate('local'), function(req, res) {
-  res.redirect('/authorize-user');
+  res.redirect('/instagramlogin');
 });
 
 router.get('/logout', function(req, res) {
@@ -47,14 +47,30 @@ router.get('/logout', function(req, res) {
   res.redirect('/');
 });
 
+router.get('/instagramlogin', function(req, res) {
+  res.render('instaLogin');
+});
 
 
-router.get('/authorize-user', function (req, res) {
-  instagramApi.use({
-    client_id: config.instagram_client_id,
-    client_secret: config.instagram_client_secret
+
+router.post('/authorize-user', function (req, res) {
+
+  var device = new Client.Device('myInstagram');
+ // var storage = new Client.CookieFileStorage('C:/Users/smedapati/personal/final/insta/instagramHelp/public/images' + '/cookies/'+'9Jewels'+'.json');
+  var storage = new Client.CookieMemoryStorage();
+  console.log('hai re hai');
+  console.log(req.body);
+  var promise = Client.Session.create(device, storage, req.body.username, req.body.password);
+  promise.then(function(sessionInstance) {
+    session = sessionInstance;
+    module.exports.session = session;
+    session.getAccount()
+        .then(function(account) {
+          console.log(account.params)
+          res.redirect('myaccount');
+        })
   });
-  res.redirect(instagramApi.get_authorization_url(config.instagram_redirect_uri));
+
 });
 
 router.get('/handleauth', function (req, res) {
@@ -69,17 +85,11 @@ router.get('/handleauth', function (req, res) {
 });
 
 
-  router .get("/api2",function(req, res){
+  router .get("/myaccount",function(req, res){
 
-  console.log(req.user);
-  //  req.user.accessToken = '599978680.1d6835e.f4511416a26849d5a02fd840114dc236';
-    var options = {access_token: '599978680.1d6835e.f4511416a26849d5a02fd840114dc236'};
-    instagramApi.use(options);
-    instagramApi.user('599978680', function(err, result, remaining, limit) {
-      console.log(result.username);
-      if(result) console.log('Yatta');
-      res.render('dd',{data:result});
-    });
+    console.log(req.body);
+      res.render('dd',{data:req.body});
+
 
 
 
