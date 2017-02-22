@@ -7,8 +7,15 @@ var instagramApi  = require('instagram-node').instagram();
 var config        = require('./config');
 var Bluebird      = require('bluebird');
 var Client = require('instagram-private-api').V1;
-Bluebird.promisifyAll(instagramApi);
+var tough = require('tough-cookie');
+var path = require('path');
+var mkdirp = require('mkdirp');
 
+var _ = require('underscore');
+var fs = require('fs');
+Bluebird.promisifyAll(instagramApi);
+mkdirp.sync(__dirname + '/cookies');
+mkdirp.sync(__dirname + '/tmp');
 router.get('/', function (req, res) {
   res.render('index', { user : req.user });
 });
@@ -51,13 +58,29 @@ router.get('/instagramlogin', function(req, res) {
   res.render('instaLogin');
 });
 
-
+function ccc(){
+  console.log('yatta');
+}
 
 router.post('/authorize-user', function (req, res) {
 
-  var device = new Client.Device('myInstagram');
- // var storage = new Client.CookieFileStorage('C:/Users/smedapati/personal/final/insta/instagramHelp/public/images' + '/cookies/'+'9Jewels'+'.json');
-  var storage = new Client.CookieMemoryStorage();
+ // var Cookie = tough.Cookie;
+  var cookie = new tough.Cookie({
+    domain : 'google.com',
+    path: '/',
+    key :'',
+    value: 'value01'
+  });
+  var cookiejar = new tough.CookieJar();
+ //cookiejar.setCookie(cookie, 'http://localhost:3000/',ccc());
+
+  var device = new Client.Device(req.body.username);
+/* var filename = "http://instagramhelper.herokuapp.com/images/" + req.body.username +".json";
+  console.log(filename);
+  fs.writeFile(filename, "", [encoding], [callback])*/
+  var storage = new Client.CookieFileStorage(__dirname + '/cookies/'+req.body.username+'.json');
+
+ // var storage = new Client.CookieStorage(cookiejar);
   console.log('hai re hai');
   console.log(req.body);
   var promise = Client.Session.create(device, storage, req.body.username, req.body.password);
@@ -67,7 +90,7 @@ router.post('/authorize-user', function (req, res) {
     session.getAccount()
         .then(function(account) {
           console.log(account.params)
-          res.redirect('myaccount');
+          res.render('dd',{data:req.body});
         })
   });
 
@@ -86,8 +109,10 @@ router.get('/handleauth', function (req, res) {
 
 
   router .get("/myaccount",function(req, res){
-
-    console.log(req.body);
+    session.getAccount()
+        .then(function(account) {
+          console.log(account.params)});
+    console.log('jjjjjj'+req.body);
       res.render('dd',{data:req.body});
 
 
